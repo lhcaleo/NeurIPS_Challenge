@@ -30,19 +30,30 @@ the tmle estimator result is this
 
 # Cool down
 
-本来是0 测试1, 3, 5, 10
+Original = 0
+
+Test 1, 3, 5, 10
 
 **cooldown**: number of epochs to wait before resuming normal operation after lr has been reduced.
 
 https://stackoverflow.com/questions/52338090/keras-callback-reducelronplateau-cooldown-parameter
 
-cooldown = 1
+- cooldown = 1
 
+```
+The back door adjustment result is below
+{'tarnet': {'baseline': 0.12033757763883295, 'targeted_regularization': 0.13501412196686438}, 'dragonnet': {'baseline': 0.11797475654976332, 'targeted_regularization': 0.15472632953498963}, 'nednet': {'baseline': 0.1806788469366141, 'targeted_regularization': 0.1896595273323854}}
+the tmle estimator result is this 
+{'tarnet': {'baseline': 0.12474572893390895, 'targeted_regularization': 0.11001276290844317}, 'dragonnet': {'baseline': 0.1215270365064941, 'targeted_regularization': 0.1201367646039978}, 'nednet': {'baseline': 0.12900751705353017, 'targeted_regularization': 0.12833875896688204}}
+```
 
+- cooldown = 3
 
+```
 
+```
 
-cooldown = 5
+- cooldown = 5
 
 ```
 The back door adjustment result is below

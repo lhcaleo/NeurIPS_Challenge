@@ -50,7 +50,10 @@ the tmle estimator result is this
 - cooldown = 3
 
 ```
-
+The back door adjustment result is below
+{'tarnet': {'baseline': 0.12260907230339946, 'targeted_regularization': 0.11969918100991855}, 'dragonnet': {'baseline': 0.11595785333094827, 'targeted_regularization': 0.10909926291049135}, 'nednet': {'baseline': 0.17782152746989946, 'targeted_regularization': 0.18548895967849674}}
+the tmle estimator result is this 
+{'tarnet': {'baseline': 0.11980048334181667, 'targeted_regularization': 0.11938923546714506}, 'dragonnet': {'baseline': 0.12120595720086974, 'targeted_regularization': 0.11369570912961112}, 'nednet': {'baseline': 0.12863719189764247, 'targeted_regularization': 0.13390230614003723}}
 ```
 
 - cooldown = 5
@@ -62,5 +65,14 @@ the tmle estimator result is this
 {'tarnet': {'baseline': 0.11751605458244961, 'targeted_regularization': 0.11344281427383215}, 'dragonnet': {'baseline': 0.12358428597643822, 'targeted_regularization': 0.11439820363486713}, 'nednet': {'baseline': 0.12635505949632936, 'targeted_regularization': 0.12821561630110875}}
 ```
 
+- cooldown = 10
 
+```
+The back door adjustment result is below
+{'tarnet': {'baseline': 0.12640138775323334, 'targeted_regularization': 0.12702277868224127}, 'dragonnet': {'baseline': 0.12357037111272348, 'targeted_regularization': 0.12791702545998354}, 'nednet': {'baseline': 0.17501701868311093, 'targeted_regularization': 0.17756259224951132}}
+the tmle estimator result is this 
+{'tarnet': {'baseline': 0.11937566595754685, 'targeted_regularization': 0.11015413121290057}, 'dragonnet': {'baseline': 0.12627003463347727, 'targeted_regularization': 0.11828272347163363}, 'nednet': {'baseline': 0.12391964444731274, 'targeted_regularization': 0.1275159707153401}}
+```
+
+# Min LR
 

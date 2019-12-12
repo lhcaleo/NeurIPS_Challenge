@@ -76,3 +76,35 @@ the tmle estimator result is this
 
 # Min LR
 
+Original = 0
+
+Test  le-5, 1e-6, 1e-7
+
+- min_lr = 1e-5
+
+```
+The back door adjustment result is below
+{'tarnet': {'baseline': 0.1215895799340942, 'targeted_regularization': 0.1356321827991395}, 'dragonnet': {'baseline': 0.11972275685923311, 'targeted_regularization': 0.12636487561929344}, 'nednet': {'baseline': 0.16572747856327386, 'targeted_regularization': 0.1799260010735252}}
+the tmle estimator result is this 
+{'tarnet': {'baseline': 0.11428054856066833, 'targeted_regularization': 0.11848146738253243}, 'dragonnet': {'baseline': 0.1172467026344791, 'targeted_regularization': 0.12709423358331393}, 'nednet': {'baseline': 0.12290262147288111, 'targeted_regularization': 0.1312234190115774}}
+```
+
+-  min_lr = 1e-6
+
+```
+The back door adjustment result is below
+{'tarnet': {'baseline': 0.12546016347468028, 'targeted_regularization': 0.1263872835877542}, 'dragonnet': {'baseline': 0.11782778244661525, 'targeted_regularization': 0.12169198613706296}, 'nednet': {'baseline': 0.17331929386677278, 'targeted_regularization': 0.18267700910476212}}
+the tmle estimator result is this 
+{'tarnet': {'baseline': 0.11492120399912034, 'targeted_regularization': 0.1242505573219377}, 'dragonnet': {'baseline': 0.11670140740878843, 'targeted_regularization': 0.11261070393801091}, 'nednet': {'baseline': 0.11623494582526618, 'targeted_regularization': 0.1326805997756526}}
+```
+
+- min_lr = 1e-7
+
+  ```
+  The back door adjustment result is below
+  {'tarnet': {'baseline': 0.1341776907691773, 'targeted_regularization': 0.12013399385510379}, 'dragonnet': {'baseline': 0.11704428650810034, 'targeted_regularization': 0.1634277166609177}, 'nednet': {'baseline': 0.17094127832266925, 'targeted_regularization': 0.1896334793998044}}
+  the tmle estimator result is this 
+  {'tarnet': {'baseline': 0.1237168631371348, 'targeted_regularization': 0.12747665740099456}, 'dragonnet': {'baseline': 0.12910178046278462, 'targeted_regularization': 0.1227766581932535}, 'nednet': {'baseline': 0.1402314021724151, 'targeted_regularization': 0.14389495392947377}}
+  ```
+
+  

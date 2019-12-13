@@ -108,3 +108,35 @@ the tmle estimator result is this
   ```
 
   
+
+#momentum
+
+Original = 0.90
+
+- Momentum = 0.8
+
+```
+The back door adjustment result is below
+{'tarnet': {'baseline': 0.14039446346281434, 'targeted_regularization': 0.1506675011285698}, 'dragonnet': {'baseline': 0.13013085085693787, 'targeted_regularization': 0.1763532596364283}, 'nednet': {'baseline': 0.19665109235861547, 'targeted_regularization': 0.1691375842784668}}
+the tmle estimator result is this 
+{'tarnet': {'baseline': 0.13828491363492176, 'targeted_regularization': 0.12612324833053834}, 'dragonnet': {'baseline': 0.12679666826249728, 'targeted_regularization': 0.11626359992714395}, 'nednet': {'baseline': 0.13220083472021973, 'targeted_regularization': 0.14319595158632376}}
+```
+
+- Momentum = 0.85
+
+```
+The back door adjustment result is below
+{'tarnet': {'baseline': {'back_door': 0}, 'targeted_regularization': 0}, 'dragonnet': {'baseline': 0.14484508930932313, 'targeted_regularization': 0.15054828032532494}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}
+the tmle estimator result is this 
+{'tarnet': {'baseline': {'back_door': 0}, 'targeted_regularization': 0}, 'dragonnet': {'baseline': 0.12949185787405773, 'targeted_regularization': 0.1195940730544058}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}
+```
+
+- Momentum = 0.95
+
+```
+The back door adjustment result is below
+{'tarnet': {'baseline': {'back_door': 0}, 'targeted_regularization': 0}, 'dragonnet': {'baseline': 0.1421686322269742, 'targeted_regularization': 0.12453773796863456}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}
+the tmle estimator result is this 
+{'tarnet': {'baseline': {'back_door': 0}, 'targeted_regularization': 0}, 'dragonnet': {'baseline': 0.14263459147993607, 'targeted_regularization': 0.1192464772841712}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}
+```
+

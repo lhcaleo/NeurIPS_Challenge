@@ -166,18 +166,27 @@ https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/ReduceLROnPlateau
 - factor = 0.4
 
 ```
-
+The back door adjustment result is below
+{'tarnet': {'baseline': {'back_door': 0}, 'targeted_regularization': 0}, 'dragonnet': {'baseline': 0.11621106618138675, 'targeted_regularization': 0.12075699274598815}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}
+the tmle estimator result is this 
+{'tarnet': {'baseline': {'back_door': 0}, 'targeted_regularization': 0}, 'dragonnet': {'baseline': 0.11572992701127392, 'targeted_regularization': 0.1161496573177446}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}
 ```
 
 - factor = 0.5
 
 ```
-
+The back door adjustment result is below
+{'tarnet': {'baseline': {'back_door': 0}, 'targeted_regularization': 0}, 'dragonnet': {'baseline': 0.1306327340135405, 'targeted_regularization': 0.15146669937848206}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}
+the tmle estimator result is this 
+{'tarnet': {'baseline': {'back_door': 0}, 'targeted_regularization': 0}, 'dragonnet': {'baseline': 0.12385599657663747, 'targeted_regularization': 0.12620271138924594}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}
 ```
 
-- Factor = 0.6
+- factor = 0.6
 
 ```
-
+The back door adjustment result is below
+{'tarnet': {'baseline': {'back_door': 0}, 'targeted_regularization': 0}, 'dragonnet': {'baseline': 0.12743967337584125, 'targeted_regularization': 0.13415321144020723}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}
+the tmle estimator result is this 
+{'tarnet': {'baseline': {'back_door': 0}, 'targeted_regularization': 0}, 'dragonnet': {'baseline': 0.11793717368464715, 'targeted_regularization': 0.12312585743028968}, 'nednet': {'baseline': 0, 'targeted_regularization': 0}}
 ```
 

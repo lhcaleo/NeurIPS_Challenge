@@ -3,7 +3,6 @@
 1. `early stopping` (use it or not)
 2. `cool down`
 3. `min_lr`
-4. `lr`
 5. `momentum`
 6. `ReduceLROnPlateau`
 
@@ -37,7 +36,7 @@ Original = 0
 
 Test 1, 3, 5, 10
 
-**cooldown**: number of epochs to wait before resuming normal operation after lr has been reduced.
+**`cooldown`**: number of epochs to wait before resuming normal operation after lr has been reduced.
 
 https://stackoverflow.com/questions/52338090/keras-callback-reducelronplateau-cooldown-parameter
 
@@ -78,6 +77,8 @@ the tmle estimator result is this
 ```
 
 # Min LR
+
+**`min_lr`**: lower bound on the learning rate.
 
 Original = 0
 
@@ -154,5 +155,29 @@ the tmle estimator result is this
 
 
 
-# ReduceLROnPlateau
+# ReduceLROnPlateau factor
+
+https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/ReduceLROnPlateau
+
+**`factor`**: factor by which the learning rate will be reduced. new_lr = lr * factor
+
+- original factor = 0.5
+- Test 0.4, 0.5, 0.6
+- factor = 0.4
+
+```
+
+```
+
+- factor = 0.5
+
+```
+
+```
+
+- Factor = 0.6
+
+```
+
+```
 
